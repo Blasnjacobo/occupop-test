@@ -3,7 +3,8 @@
   margin: 0;
 }
 
-.login-container {
+/*Login Page*/
+.login-container, .forgotPassword-container {
   width: 100%;
   height: 100vh;
   display: grid;
@@ -15,16 +16,113 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  gap: 1rem;
 }
 
 .cleanMyCar-section {
   background-color: rgba(27,235,183,255);
 }
 
+.email-password-section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.login-section h1 {
+  font-size: xx-large;
+}
+
+.login-section input {
+  font-size: x-large;
+}
+
+.need-help-link {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: large;
+  text-decoration: none;
+  color: black;
+}
+
+.forgot-password-link {
+  align-self: flex-end;
+  text-decoration: none;
+  color: black;
+}
+
+.login-button {
+  align-self: flex-end;
+  height: 50px;
+  width: 300px;
+  text-align: center;
+  margin: 20px auto;
+  background-color: rgba(27,235,183,255)
+}
+
+.error-message {
+  font-size: larger;
+  color: red;
+  font-weight: bold;
+}
+
+/* ForgotPassword */
+.forgotPassword-container {
+  background-color: rgba(27,235,183,255);
+  height: 100vh;
+  width: 100vw;
+}
+
+.forgotPassword-container section {
+  position: relative;
+  top: 25%;
+  left: 15%;
+  width: 70%;
+  height: 50%;
+}
+
+.forgotPassword-container .cleanMyCar-section {
+  background-color: rgba(27,235,183,255);;
+}
+
+.forgotPassword-recover {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.recover-text {
+  text-align: center;
+  font-size: larger;
+  font-weight: bold;
+}
+
+.forgot-links{
+  display: flex;
+  gap: 1rem;
+  margin: 0 auto;
+}
+
+/* Welcome */
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+}
 
 @media screen and (max-width: 450px) {
   .login-container {
     grid-template-columns: 1fr;
     gap: 3rem;
+    padding: 2rem 0;
+  }
+  .forgotPassword-container{
+    grid-template-columns: 1fr;
+    gap: 3rem;
+    padding: 2rem 0;
   }
 }
