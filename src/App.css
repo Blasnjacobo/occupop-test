@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box; 
+  margin: 0;
+}
+
+.login-container {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+}
+
+.cleanMyCar-section, .login-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cleanMyCar-section {
+  background-color: rgba(27,235,183,255);
+}
+
+
+@media screen and (max-width: 450px) {
+  .login-container {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
